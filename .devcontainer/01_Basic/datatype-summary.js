@@ -58,3 +58,27 @@ console.log(typeof myfun); // return type as function
 //JavaScript is a dynamic language. This means that the type of a variable is assigned at runtime, 
 // based on the value of the variable. 
 
+console.log("*******Stack and heap memory ********");
+
+// stack (premitive datattype) you will get a copy 
+// heap (non premitive data type ) you will get a referenec 
+// example  Stack 
+    let firstName ="Gaurav";
+    let anotherName = firstName;
+    console.log(anotherName); // return Gaurav
+    anotherName ="Gaurav B"; 
+    console.log(anotherName); // Gaurav B -- Return the value for the new assignment 
+    
+    let user1 ={
+        userEmail :"gaurav@gmail.com",
+        mobile :9988776655
+    }
+
+    let user2 = user1; 
+    user2.userEmail = "gaurav@gmail.com";
+    console.log(user1); // return value with updated email id as it referencing the object 
+    console.log(user2);// return value with updated email id as it referencing the object 
+    // user1 and user2 object values are same as its referencing one one object 
+    
+    
+    
